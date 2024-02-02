@@ -1,0 +1,717 @@
+/* Default CSS Start */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #F38906;
+    --white: #fff;
+    --black:#060606;
+    --gray:#727272;
+}
+
+/* ::selection {
+    background-color: #106EEA;
+    color: var(--white);
+} */
+
+body {
+    font-family: 'system-ui';
+    line-height: 26px;
+    background-color: gray;
+    font-weight: 400;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.item-center {
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.spacey {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.w-33 {
+    width: 33.33%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.w-50 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0 -15px;
+}
+
+/* Default CSS End */
+
+
+/* Header CSS Start */
+
+    nav{
+        background-color: #35352D;
+        padding: 20px 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+    }
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+}
+.main_menu{
+    display: flex;
+    align-items: center;
+}
+.main_menu a{
+    color: white;
+    padding: 0 25px;
+    font-size: 18px;
+}
+.header button{
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
+.header .btn a{
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: yellow;
+    outline: none;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Header CSS End */
+
+/* Banner CSS Start */
+
+.banner{
+    background-image: url('./image/banner.webp');
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+    position: relative;
+}
+.banner .content{
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner .content h2{
+    color: white;
+    width: 66%;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+}
+.banner .content p{
+    color:white;
+    width: 51%;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.banner .btn{
+    margin-top: 35px;
+}
+.banner .btn a{
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: yellow;
+    padding: 18px 40px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+/* Banner CSS End */
+
+/* Element CSS Start */
+
+.ele .box{
+    padding: 30px 30px 10px ;
+    box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.08);
+}
+.ele .box .img img{
+    width: 45px;
+    margin: 10px 20px 15px 0;
+}
+.ele .box .desc h3 a{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.ele .box .desc p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+/* Element CSS End */
+
+/* About CSS Start */
+
+.about .title h2{
+    font-size: 16px;
+    color: yellow;
+    padding-bottom: 10px;
+}
+.about .title h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 23px;
+    color: white;
+    font-weight: 500;
+}
+.about .title p{
+    margin: 10px 0 5px 0;
+}
+.about .icon{
+    padding-top: 15px;
+}
+.about .icon h3 a{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px 0 10px 0;
+    margin-bottom: 5px;
+}
+.about .icon p{
+    margin-bottom: 16px;
+}
+
+/* About CSS End */
+
+/* Service CSS Start */
+
+.service .title h2{
+    font-size: 16px;
+    color: yellow;
+    letter-spacing: 1px;
+}
+.service .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+.service .box{
+    margin-top: 30px;
+}
+.service .box .img img{
+    width: 100%;
+    border-radius: 30px;
+}
+.service .content {
+    background-color: #ffffff;
+    padding: 20px 30px 40px 30px;
+}
+.service .content h3 a{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 15px 0 10px 0;
+    margin-bottom: 5px;
+    transition: .3s;
+}
+.service .content h3 a:hover{
+    color: var(--yellow);
+}
+.service .content p{
+    margin-bottom: 16px;
+}
+.service .btn{
+    margin-top: 10px;
+}
+.service .btn a{
+    color: var(--white);
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--yellow);
+    padding: 8px 32px;
+    transition: .3s;
+}
+
+/* Service CSS End */
+
+/* Gallery CSS Start */
+
+.gallery .title h2{
+    font-size: 16px;
+    color: yellow;
+    letter-spacing: 1px;
+}
+.gallery .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+.gallery .m{
+    margin-top: 50px;
+}
+.gallery .box {
+    width: 33.33%;
+    padding: 12px 15px 12px 15px;
+}
+.gallery .box .img{
+    position: relative;
+}
+.gallery .box .img img{
+    width: 100%;
+    display: block;
+    border-radius: 50px;
+}
+.gallery .box .img::before{
+    content: '';
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #00000070;
+    /* z-index: 2; */
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+/* Gallery CSS End */
+
+/* Package CSS Start */
+
+.package .title h2{
+    font-size: 16px;
+    color: yellow;
+    letter-spacing: 1px;
+}
+.package .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+.package .box{
+    margin-top: 30px;
+    transition: .3s;
+}
+.package .box .img{
+    overflow: hidden;
+}
+
+.package .box .img img{
+    width: 100%;
+    display: block;
+    transition: .4s;
+    border-radius: 30px;
+}
+.package .content {
+    background-color: #ffffff;
+    padding: 25px 19px 30px;
+}
+.package .content h3 a{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 15px 0 10px 0;
+    margin-bottom: 5px;
+    transition: .3s;
+}
+.package .content p{
+    margin-bottom: 16px;
+}
+.package .btn{
+    margin-top: 10px;
+}
+.package .btn a{
+    color: var(--white);
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--yellow);
+    padding: 8px 32px;
+    transition: .3s;
+}
+
+/* Package CSS End */
+
+/* Team CSS Start */
+
+.team .title h2{
+    font-size: 16px;
+    color: yellow;
+    letter-spacing: 1px;
+}
+.team .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+.team .box{
+    margin-top: 50px;
+}
+.team .box .img img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.team .box .content{
+    padding: 23px 25px 30px;
+    background-color: #fff;
+}
+.team .box .content h5 a{
+    color: var(--black);
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.team .box .content span{
+    font-weight: 500;
+}
+.team .box .content .icon{
+    justify-content: center;
+    margin-top: 10px;
+}
+.team .box .content .icon a{
+    color: var(--gray);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+    transition: .3s;
+}
+/* Team CSS End */
+
+/* Company CSS Start */
+
+.company{
+    background-color: var(--yellow);
+    padding: 70px 0;
+}
+.company .box{
+    padding: 10px;
+}
+.company .box .img {
+    margin: 0 50px;
+}
+
+/* Company CSS End */
+
+/* Testi CSS Start */
+
+.bg{
+    background-image: url('./image/bg.jpg');
+}
+.testi{
+    padding: 50px 0;
+}
+.testi .title h2{
+    font-size: 16px;
+    color: var(--yellow);
+    letter-spacing: 1px;
+}
+.testi .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--black);
+}
+.testi .box{
+    background-image: url('./image/testi.png');
+    margin: 0 10px;
+    width: 50%;
+    padding: 40px 35px 30px 35px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.04);
+    margin-top:20px ;
+    margin-bottom: 30px;
+}
+.testi .text{
+    margin-left: 10px;
+    color: var(--white);
+}
+.testi .content h2{
+    color: var(--white);
+    font-weight: 500;
+    padding: 10px 0 0 0 ;
+}
+.testi .text span{
+    margin-top: 5px;
+    font-size: 17px;
+}
+.testi .desc p{
+    padding-top: 15px;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+.testi .icon{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+.testi .icon h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/* Testi CSS End */
+
+/* Help CSS Start */
+
+.help .box{
+    width: 50%;
+    margin: 60px 50px 0 0 ;
+    padding: 10;
+}
+.help .box h3{
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 500;
+}
+.help .box p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.help .text{
+    margin-top: 10px;
+}
+.help .icon{
+    margin-top: 25px;
+}
+.help .icon .social{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: var(--yellow);
+    color: var(--white);
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.help .title h3 a{
+    margin-bottom: 8px;
+    padding-top: 18px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black);
+}
+.help .title .txt{
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.form .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--black);
+}
+.form{
+    padding: 60px 35px;
+}
+.form input{
+    padding: 0.375rem 0.75rem;
+    display: block;
+    background-color: #fff;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 23px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #f1f1f1;
+    font-weight: 500;
+}
+.form textarea{
+    margin-bottom: 25px;
+    padding: 0.375rem 0.75rem;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.form .btn a{
+    padding: 15px 30px;
+    font-weight: 600;
+    background-color: var(--yellow);
+    color: var(--white);
+    border-radius: 5px;
+    display: inline-block;
+    transition: .3s;
+}
+
+/* Help CSS End */
+
+/* Blog CSS Start */
+
+.blog .title h2{
+    font-size: 16px;
+    color: var(--yellow);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.blog .title h3{
+    margin: 10px 0 30px 0;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--black);
+}
+.blog .box{
+    background-color: #fff;
+    margin-top: 50px;
+}
+.blog .box .img{
+    position: relative;
+    overflow: hidden;
+}
+.blog .box .img img{
+    width: 100%;
+    display: block;
+}
+.blog .box .img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000070;
+    visibility: hidden;
+    transform: scale(1);
+    opacity: 0;
+}
+.blog .box .content{
+    padding: 20px 15px 5px 25px;
+}
+.blog .content span a{
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+}
+.blog .content h2 a{
+    margin-bottom: 16px;
+    margin-top: 11px;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 500;
+    transition: .3s;
+}
+.blog .content p{
+    margin-bottom: 20px;
+}
+.blog .content .btn{
+    padding-bottom: 22px;
+}
+.blog .content .btn a{
+    padding: 10px 30px;
+    color: var(--yellow);
+    background-color: #FEF6EB;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* Blog CSS End */
+
+/* Footer CSS Start */
+
+.footer{
+    background-color: var(--black);
+}
+.footer h2{
+    margin: 28px 0;
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 500;
+}
+.footer p{
+    margin-bottom: 10px;
+    color: var(--white);
+}
+.footer .add P{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.footer .menu a{
+    color: var(--white);
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.footer .menu img{
+    width: 105px;
+    margin: 0 8px;
+}
+.footer .copyright{
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+
+}
+
+/* Footer CSS End */
